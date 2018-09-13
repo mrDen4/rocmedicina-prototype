@@ -1,0 +1,36 @@
+.plus {
+
+    .plus__container {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .plus__menu {
+        display: flex;
+        flex-wrap: wrap;
+
+        .menu__item {
+            width: 25%;
+            height: 220px;
+            border: 1px solid #ffffff;
+            background: #E5E5E5;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: .3s;
+            cursor: pointer;
+
+            &:hover {
+
+                .item__text {
+                    display: inherit;
+                }
+            }
+
+            .item__text {
+                display: none;
+            }
+        }
+    }
+}

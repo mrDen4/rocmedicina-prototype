@@ -46,15 +46,34 @@
         }
     }
 
+    .sale__btns {
+        display: flex;
+        margin-top: 20px;
+    }
+
     .sale__btn {
         width: 250px;
         height: 40px;
         border: none;
         border-radius: 4px;
         background: #C4C4C4;
+        margin-right: 20px;
+        font-size: 20px;
+        cursor: pointer;
+        transition: .3s;
+
+        &:hover {
+            background: lighten(#C4C4C4, 20%);
+        }
 
         &--red {
             background: $red;
+            color: #ffffff;
+            margin-right: 0; 
+
+            &:hover {
+                background: darken($red, 10%);
+            }
         }
     }
 }
