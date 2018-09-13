@@ -1,0 +1,60 @@
+.hero {
+    background: url('../images/hero-bg.png');
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+
+    .hero__container {
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .hero__sale {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 100%;
+    }
+
+    .sale__content {
+        width: 440px;
+        position: relative;
+        z-index: 10;
+    }
+
+    .content__bg {
+        background: #ffffff;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        opacity: .7;
+        top: 0;
+        z-index: 1;
+    }
+
+    .sale__text {
+        font-size: 56px;
+        z-index: 10;
+        position: relative;
+        margin: 0;
+        padding: 10px;
+
+        .text__color {
+            color: $red;
+            z-index: 10;
+        }
+    }
+
+    .sale__btn {
+        width: 250px;
+        height: 40px;
+        border: none;
+        border-radius: 4px;
+        background: #C4C4C4;
+
+        &--red {
+            background: $red;
+        }
+    }
+}
