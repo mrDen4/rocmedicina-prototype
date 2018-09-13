@@ -22,13 +22,23 @@
 
             &:hover {
 
+                .item__title {
+                    transform: translateY(0px);
+                }
+
                 .item__text {
-                    display: inherit;
+                    opacity: 1;
                 }
             }
 
+            .item__title {
+                transform: translateY(50px);
+                transition: .3s;
+            }
+
             .item__text {
-                display: none;
+                opacity: 0;
+                transition: .3s;
             }
         }
     }

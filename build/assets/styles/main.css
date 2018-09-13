@@ -53,7 +53,9 @@ ul {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    z-index: 10; }
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px; }
   .header .header__logo {
     z-index: 10; }
   .header .logo__img {
@@ -64,19 +66,32 @@ ul {
     z-index: 10; }
   .header .contacts__link {
     color: #FF0000;
-    text-decoration: none; }
+    text-decoration: none;
+    transition: .3s; }
+    .header .contacts__link:hover {
+      color: #000000; }
   .header .header__menu {
     display: flex;
     align-items: center;
     background: none;
     border: none;
+    color: #FF0000;
     cursor: pointer;
     z-index: 10; }
+    .header .header__menu:hover {
+      color: #000000; }
+      .header .header__menu:hover .menu__icon {
+        background: url("../images/menu-active.png") center center no-repeat;
+        background-size: contain;
+        transform: rotate(180deg); }
   .header .menu__text {
-    color: #FF0000;
     text-transform: uppercase;
-    margin-right: 10px; }
+    margin-right: 10px;
+    transition: .3s; }
   .header .menu__icon {
+    background: url("../images/menu.png") center center no-repeat;
+    background-size: contain;
+    transition: .3s;
     width: 40px;
     height: 20px; }
 
@@ -155,10 +170,16 @@ ul {
     justify-content: center;
     transition: .3s;
     cursor: pointer; }
+    .plus .plus__menu .menu__item:hover .item__title {
+      transform: translateY(0px); }
     .plus .plus__menu .menu__item:hover .item__text {
-      display: inherit; }
+      opacity: 1; }
+    .plus .plus__menu .menu__item .item__title {
+      transform: translateY(50px);
+      transition: .3s; }
     .plus .plus__menu .menu__item .item__text {
-      display: none; }
+      opacity: 0;
+      transition: .3s; }
 
 .callback {
   background: url("../images/callback-bg.png");
@@ -211,10 +232,16 @@ ul {
     justify-content: center;
     transition: .3s;
     cursor: pointer; }
+    .services .services__menu .menu__item:hover .item__title {
+      transform: translateY(0px); }
     .services .services__menu .menu__item:hover .item__text {
-      display: inherit; }
+      opacity: 1; }
+    .services .services__menu .menu__item .item__title {
+      transform: translateY(50px);
+      transition: .3s; }
     .services .services__menu .menu__item .item__text {
-      display: none; }
+      opacity: 0;
+      transition: .3s; }
 
 .totals .totals__container {
   flex-direction: row;
@@ -250,7 +277,8 @@ ul {
       color: #FF0000;
       font-size: 35px;
       display: block;
-      margin-right: 10px; }
+      margin-right: 10px;
+      font-weight: bold; }
 
 .totals .totals__conclude .conclude__list {
   width: 100%; }
