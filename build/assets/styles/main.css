@@ -488,11 +488,18 @@ ul {
     transition: .3s; }
     .service .list__item:hover .item__sale {
       height: 20px; }
+    .service .list__item:hover .item__btn {
+      padding: 10px 20px;
+      height: initial; }
+    .service .list__item:hover .item__title {
+      transform: translateY(0px); }
     .service .list__item .item__title {
       margin-top: 0;
       font-size: 36px;
       font-weight: 500;
       line-height: 40px;
+      transform: translateY(60px);
+      transition: .3s;
       font-family: 'Roboto', Arial, Helvetica, sans-serif; }
     .service .list__item .item__sale {
       margin-top: 0;
@@ -506,8 +513,10 @@ ul {
       border-radius: 4px;
       color: #ffffff;
       font-family: 'Roboto', Arial, Helvetica, sans-serif;
-      padding: 10px 20px;
       transition: .3s;
-      cursor: pointer; }
+      cursor: pointer;
+      height: 0px;
+      padding: 0;
+      overflow: hidden; }
       .service .list__item .item__btn:hover {
         background: #cc0000; }

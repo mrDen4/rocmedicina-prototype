@@ -39,6 +39,15 @@
             .item__sale {
                 height: 20px;
             }
+
+            .item__btn {
+                padding: 10px 20px;
+                height: initial;
+            }
+
+            .item__title {
+                transform: translateY(0px);
+            }
         }
 
         .item__title {
@@ -46,6 +55,8 @@
             font-size: 36px;
             font-weight: 500;
             line-height: 40px;
+            transform: translateY(60px);
+            transition: .3s;
             font-family: 'Roboto', Arial, Helvetica, sans-serif;
         }
 
@@ -63,9 +74,11 @@
             border-radius: 4px;
             color: #ffffff;
             font-family: 'Roboto', Arial, Helvetica, sans-serif;
-            padding: 10px 20px;
             transition: .3s;
             cursor: pointer;
+            height: 0px;
+            padding: 0;
+            overflow: hidden;
 
             &:hover {
                 background: darken($red, 10%);
