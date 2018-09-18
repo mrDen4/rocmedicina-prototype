@@ -1,0 +1,32 @@
+.about {
+    background: url('../images/services-bg.png') center center no-repeat;
+    background-size: cover;
+
+    .about__container {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        color: #ffffff;
+    }
+
+    .about__title {
+        color: #ffffff;
+        font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    }
+
+    .about__content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .content__text {
+        width: 50%;
+        background: rgba(255, 255, 255, 0.5);
+        border-radius: 4px;
+        padding: 20px 20px;
+        color: #000000;
+    }
+
+    .content__license {
+        width: 40%;
+    }
+}
