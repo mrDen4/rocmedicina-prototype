@@ -40,3 +40,27 @@ margin: 0;
 padding: 0;
 list-style: none;
 }
+
+.wrapper {
+  transition: .3s;
+
+  &--active {
+    transform: translateX(-25%);
+  }
+}
+
+.wrapper__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: .7;
+  display: none;
+
+  &--active {
+    display: initial;
+  }
+}
