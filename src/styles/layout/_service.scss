@@ -26,11 +26,13 @@
         justify-content: space-around;
         width: 45%;
         height: 280px;
-        background: #c4c4c4;
+        background: url('../images/services-item.png') center center no-repeat;
+        background-size: cover;
         margin-bottom: 50px;
         border-radius: 4px;
         padding: 20px;
         transition: .3s;
+
         
         &:hover {
 
