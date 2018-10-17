@@ -585,8 +585,10 @@ ul {
     width: 40%; }
 
 .reviews {
-  padding-top: 100px;
-  padding-bottom: 100px; }
+  padding-top: 150px;
+  padding-bottom: 100px;
+  background: url("../images/services-bg.png") center center no-repeat;
+  background-size: cover; }
   .reviews .reviews__container {
     flex-direction: row; }
   .reviews .reviews__column {
