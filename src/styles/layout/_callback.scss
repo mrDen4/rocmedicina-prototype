@@ -36,6 +36,7 @@
             border: none;
             cursor: pointer;
             transition: .3s;
+            text-transform: uppercase;
 
             &:hover {
                 background: darken($red, 10%);

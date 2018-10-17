@@ -37,6 +37,7 @@
         margin-top: 50px;
         margin-bottom: 50px;
         font-size: 20px;
+        max-width: 400px;
 
         .text__color {
             color: #6A6A6A;
@@ -52,6 +53,7 @@
         height: 40px;
         cursor: pointer;
         transition: .3s;
+        text-transform: uppercase;
 
         &:hover {
             background: darken($red, 10%);

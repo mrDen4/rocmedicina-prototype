@@ -8,6 +8,8 @@
     <title>Росмедицина</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/styles/main.css">
 </head>
 
@@ -20,77 +22,77 @@
                     <img src="./assets/images/logo.png" alt="logo" class="logo__img">
                 </a>
                 <div class="header__contacts">
-                    <a href="tel:+74994043903" class="contacts__link">+7 (499) 404 -39-03</a>
-                    <a href="mailto:sos@rocmedicina.ru" class="contacts__link">sos@rocmedicina.ru</a>
+                    <a href="tel:+74994043903" class="contacts__link"><i class="fas fa-phone"></i> +7 (499) 404 -39-03</a>
+                    <a href="mailto:sos@rocmedicina.ru" class="contacts__link"><i class="far fa-envelope"></i>
+                        sos@rocmedicina.ru</a>
+                </div>
+                <div class="header__socials">
+                    <a href="#" class="socials__link"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" class="socials__link"><i class="fab fa-telegram"></i></a>
                 </div>
                 <button class="header__menu">
                     <p class="menu__text">Меню</p>
                     <div class="menu__icon"></div>
-                    <!-- <img src="./assets/images/menu.png" alt="icon" class="menu__icon"> -->
                 </button>
             </div>
         </header>
-        <section class="section services">
-            <div class="container services__container">
-                <h1 class="title services__title">Акции</h1>
-                <ul class="services__menu">
-                    <li class="menu__item">
-                        <a href="#" class="item__link">
-                            <div class="item__icon"></div>
-                            <h3 class="item__title">Выезд скорой помощи в пределах МКАД</h3>
-                            <p class="item__text">Текст про Выезд скорой помощи в пределах МКАД</p>
-                        </a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="#" class="item__link">
-                            <div class="item__icon"></div>
-                            <h3 class="item__title">Выезд скорой помощи в пределах МКАД</h3>
-                            <p class="item__text">Текст про Выезд скорой помощи в пределах МКАД</p>
-                        </a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="#" class="item__link">
-                            <div class="item__icon"></div>
-                            <h3 class="item__title">Выезд скорой помощи в пределах МКАД</h3>
-                            <p class="item__text">Текст про Выезд скорой помощи в пределах МКАД</p>
-                        </a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="#" class="item__link">
-                            <div class="item__icon"></div>
-                            <h3 class="item__title">Выезд скорой помощи в пределах МКАД</h3>
-                            <p class="item__text">Текст про Выезд скорой помощи в пределах МКАД</p>
-                        </a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="#" class="item__link">
-                            <div class="item__icon"></div>
-                            <h3 class="item__title">Выезд скорой помощи в пределах МКАД</h3>
-                            <p class="item__text">Текст про Выезд скорой помощи в пределах МКАД</p>
-                        </a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="#" class="item__link">
-                            <div class="item__icon"></div>
-                            <h3 class="item__title">Выезд скорой помощи в пределах МКАД</h3>
-                            <p class="item__text">Текст про Выезд скорой помощи в пределах МКАД</p>
-                        </a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="#" class="item__link">
-                            <div class="item__icon"></div>
-                            <h3 class="item__title">Выезд скорой помощи в пределах МКАД</h3>
-                            <p class="item__text">Текст про Выезд скорой помощи в пределах МКАД</p>
-                        </a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="#" class="item__link">
-                            <div class="item__icon"></div>
-                            <h3 class="item__title item__title--red">Посмотреть все услуги</h3>
-                            <p class="item__text item__text--red"><i class="fas fa-arrow-right"></i></p>
-                        </a>
-                    </li>
-                </ul>
+        <section class="section reviews">
+            <div class="container reviews__container">
+                <div class="reviews__column">
+                    <div class="column__write">
+                        <h1 class="title write__tile">Написать отзыв</h1>
+                        <form method="POST" class="write__form">
+                            <div class="form__left">
+                                <input type="text" class="left__inp" name="name" placeholder="Введите имя">
+                                <input type="text" class="left__inp" name="email" placeholder="Введите E-mail">
+                                <input type="text" class="left__inp" name="phone" placeholder="Введите телефон">
+                            </div>
+                            <div class="form__right">
+                                <textarea class="right__text" name="text" cols="30" rows="10" placeholder="Напишите ваш отзыв"></textarea>
+                                <button class="right__btn">Отправить отзыв</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="column__all">
+                        <h1 class="title all__title">Отзывы</h1>
+                        <ul class="all__list">
+                            <li class="list__item">
+                                <h3 class="item__name">Василий Д.А. 21.08.2018</h3>
+                                <p class="item__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
+                                    quos? Cum iure, voluptatibus totam magnam doloremque nihil eaque aspernatur dolor
+                                    animi ipsum quaerat consequuntur autem quae? Mollitia, doloribus. Dicta,
+                                    tempora.Rem ducimus impedit commodi sint accusantium accusamus sunt deleniti
+                                    consectetur omnis numquam aperiam saepe, tempora blanditiis laboriosam facere aut?
+                                    Error, pariatur ratione natus quasi neque temporibus non deleniti corporis aut.</p>
+                            </li>
+                            <li class="list__item">
+                                <h3 class="item__name">Василий Д.А. 21.08.2018</h3>
+                                <p class="item__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
+                                    quos? Cum iure, voluptatibus totam magnam doloremque nihil eaque aspernatur dolor
+                                    animi ipsum quaerat consequuntur autem quae? Mollitia, doloribus. Dicta,
+                                    tempora.Rem ducimus impedit commodi sint accusantium accusamus sunt deleniti
+                                    consectetur omnis numquam aperiam saepe, tempora blanditiis laboriosam facere aut?
+                                    Error, pariatur ratione natus quasi neque temporibus non deleniti corporis aut.</p>
+                            </li>
+                            <li class="list__item">
+                                <h3 class="item__name">Василий Д.А. 21.08.2018</h3>
+                                <p class="item__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
+                                    quos? Cum iure, voluptatibus totam magnam doloremque nihil eaque aspernatur dolor
+                                    animi ipsum quaerat consequuntur autem quae? Mollitia, doloribus. Dicta,
+                                    tempora.Rem ducimus impedit commodi sint accusantium accusamus sunt deleniti
+                                    consectetur omnis numquam aperiam saepe, tempora blanditiis laboriosam facere aut?
+                                    Error, pariatur ratione natus quasi neque temporibus non deleniti corporis aut.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="reviews__imgs">
+                    <div class="imgs__slider">
+                        <div class="slider__slide">
+                            <img src="./assets/images/review.png" alt="" class="slide__img">
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="section callback">
@@ -182,8 +184,8 @@
                 </li>
             </ul>
             <div class="menu__contacts">
-                <a href="#" class="contacts__link">+7 (499) 404 -39-03</a>
-                <a href="#" class="contacts__link">email@mail.com</a>
+                <a href="#" class="contacts__link"><i class="fas fa-phone"></i> +7 (499) 404 -39-03</a>
+                <a href="#" class="contacts__link"><i class="far fa-envelope"></i> email@mail.com</a>
             </div>
             <button class="menu__btn">Заказать услугу</button>
         </div>

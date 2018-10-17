@@ -60,7 +60,7 @@ ul {
   width: 100vw; }
   .header .header__bg {
     background: #ffff;
-    opacity: .4;
+    opacity: .6;
     position: absolute;
     top: 0;
     left: 0;
@@ -85,9 +85,27 @@ ul {
   .header .contacts__link {
     color: #FF0000;
     text-decoration: none;
-    transition: .3s; }
+    transition: .3s;
+    font-size: 20px; }
     .header .contacts__link:hover {
       color: #000000; }
+  .header .header__socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10; }
+  .header .socials__link {
+    font-size: 40px;
+    color: #39b0ff;
+    margin-right: 10px;
+    transition: .3s; }
+    .header .socials__link .fa-whatsapp {
+      color: #6aca4c;
+      transition: .3s; }
+      .header .socials__link .fa-whatsapp:hover {
+        color: #8bd673; }
+    .header .socials__link:hover {
+      color: #6cc4ff; }
   .header .header__menu {
     display: flex;
     align-items: center;
@@ -128,7 +146,8 @@ ul {
     align-items: flex-end;
     width: 100%; }
   .hero .sale__content {
-    width: 440px;
+    width: 520px;
+    padding: 20px;
     position: relative;
     z-index: 10; }
   .hero .content__bg {
@@ -138,6 +157,7 @@ ul {
     height: 100%;
     opacity: .7;
     top: 0;
+    left: 0;
     z-index: 1; }
   .hero .sale__text {
     font-size: 56px;
@@ -150,17 +170,19 @@ ul {
       z-index: 10; }
   .hero .sale__btns {
     display: flex;
-    margin-top: 20px; }
+    margin-top: 20px;
+    z-index: 10; }
   .hero .sale__btn {
     width: 250px;
     height: 40px;
     border: none;
     border-radius: 4px;
-    background: #C4C4C4;
+    background: white;
     margin-right: 20px;
     font-size: 20px;
     cursor: pointer;
-    transition: .3s; }
+    transition: .3s;
+    z-index: 10; }
     .hero .sale__btn:hover {
       background: #f7f7f7; }
     .hero .sale__btn--red {
@@ -228,12 +250,13 @@ ul {
       color: #ffff;
       border: none;
       cursor: pointer;
-      transition: .3s; }
+      transition: .3s;
+      text-transform: uppercase; }
       .callback .callback__form .form__btn:hover {
         background: #cc0000; }
 
 .services .services__container {
-  padding-top: 50px;
+  padding-top: 100px;
   padding-bottom: 50px; }
 
 .services .services__menu {
@@ -254,12 +277,21 @@ ul {
       transform: translateY(0px); }
     .services .services__menu .menu__item:hover .item__text {
       opacity: 1; }
+    .services .services__menu .menu__item .item__link {
+      text-decoration: none;
+      color: #000000; }
     .services .services__menu .menu__item .item__title {
       transform: translateY(50px);
-      transition: .3s; }
+      transition: .3s;
+      text-align: center; }
+      .services .services__menu .menu__item .item__title--red {
+        color: red; }
     .services .services__menu .menu__item .item__text {
       opacity: 0;
-      transition: .3s; }
+      transition: .3s;
+      text-align: center; }
+      .services .services__menu .menu__item .item__text--red {
+        color: red; }
 
 .totals .totals__container {
   flex-direction: row;
@@ -341,7 +373,8 @@ ul {
 .contacts .content__text {
   margin-top: 50px;
   margin-bottom: 50px;
-  font-size: 20px; }
+  font-size: 20px;
+  max-width: 400px; }
   .contacts .content__text .text__color {
     color: #6A6A6A; }
 
@@ -353,7 +386,8 @@ ul {
   width: 240px;
   height: 40px;
   cursor: pointer;
-  transition: .3s; }
+  transition: .3s;
+  text-transform: uppercase; }
   .contacts .content__btn:hover {
     background: #cc0000; }
 
@@ -455,7 +489,8 @@ ul {
     width: 100%;
     height: 30px;
     cursor: pointer;
-    transition: .3s; }
+    transition: .3s;
+    text-transform: uppercase; }
     .menu .menu__btn:hover {
       background: #cc0000; }
 
@@ -542,3 +577,90 @@ ul {
     color: #000000; }
   .about .content__license {
     width: 40%; }
+
+.reviews {
+  padding-top: 100px;
+  padding-bottom: 100px; }
+  .reviews .reviews__container {
+    flex-direction: row; }
+  .reviews .reviews__column {
+    width: 70%; }
+  .reviews .column__write {
+    display: flex;
+    background: #E3E3E3;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 4px; }
+  .reviews .write__tile {
+    margin-bottom: 10px; }
+  .reviews .write__form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 150px; }
+    .reviews .write__form .form__left {
+      width: 30%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+      .reviews .write__form .form__left .left__inp {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 4px; }
+    .reviews .write__form .form__right {
+      width: 65%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+      .reviews .write__form .form__right .right__text {
+        height: 100px;
+        border: none;
+        border-radius: 4px;
+        padding: 10px; }
+      .reviews .write__form .form__right .right__btn {
+        width: 200px;
+        background: red;
+        text-transform: uppercase;
+        color: #ffffff;
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: .3s; }
+        .reviews .write__form .form__right .right__btn:hover {
+          background: #ff6666; }
+  .reviews .column__all {
+    background: #E3E3E3;
+    margin-top: 20px;
+    border-radius: 4px;
+    height: 400px;
+    overflow: auto; }
+  .reviews .all__title {
+    margin-bottom: 10px; }
+  .reviews .all__list {
+    display: flex;
+    flex-direction: column;
+    padding: 20px; }
+    .reviews .all__list .list__item {
+      background: #ffffff;
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+      margin-bottom: 20px;
+      border-radius: 4px; }
+  .reviews .reviews__imgs {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 15px; }
+  .reviews .imgs__slider {
+    width: 100%; }
+  .reviews .slider__slide {
+    width: 100%; }
+    .reviews .slider__slide .slide__img {
+      width: 100%; }

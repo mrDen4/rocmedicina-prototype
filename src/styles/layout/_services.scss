@@ -1,6 +1,6 @@
 .services {
     .services__container {
-        padding-top: 50px;
+        padding-top: 100px;
         padding-bottom: 50px;
     }
 
@@ -31,14 +31,29 @@
                 }
             }
 
+            .item__link {
+                text-decoration: none;
+                color: #000000;
+            }
+
             .item__title {
                 transform: translateY(50px);
                 transition: .3s;
+                text-align: center;
+
+                &--red {
+                    color: red;
+                }
             }
 
             .item__text {
                 opacity: 0;
                 transition: .3s;
+                text-align: center;
+
+                &--red {
+                    color: red;
+                }
             }
         }
     }

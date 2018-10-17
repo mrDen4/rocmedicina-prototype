@@ -1,0 +1,127 @@
+.reviews {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    .reviews__container {
+        flex-direction: row;
+    }
+
+    .reviews__column {
+        width: 70%;
+    }
+
+    .column__write {
+        display: flex;
+        background: #E3E3E3;
+        flex-direction: column;
+        padding: 10px;
+        border-radius: 4px;
+    }
+
+    .write__tile {
+        margin-bottom: 10px;
+    }
+
+    .write__form {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 150px;
+
+        .form__left {
+            width: 30%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .left__inp {
+                width: 100%;
+                padding: 10px;
+                border: none;
+                border-radius: 4px;
+            }
+        }
+
+        .form__right {
+            width: 65%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .right__text {
+                height: 100px;
+                border: none;
+                border-radius: 4px;
+                padding: 10px;
+            }
+
+            .right__btn {
+                width: 200px;
+                background: red;
+                text-transform: uppercase;
+                color: #ffffff;
+                padding: 10px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                transition: .3s;
+
+                &:hover {
+                    background: lighten($color: red, $amount: 20);
+                }
+            }
+        }
+    }
+
+    .column__all {
+        background: #E3E3E3;
+        margin-top: 20px;
+        border-radius: 4px;
+        height: 400px;
+        overflow: auto;
+    }
+
+    .all__title {
+        margin-bottom: 10px;
+    }
+
+    .all__list {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        // height: 300px;
+        // overflow: hidden;
+
+        .list__item {
+            background: #ffffff;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+    }
+
+    .reviews__imgs {
+        width: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        padding: 15px;
+    }
+
+    .imgs__slider {
+        width: 100%;
+    }
+
+    .slider__slide {
+        width: 100%;
+
+        .slide__img {
+            width: 100%;
+        }
+    }
+}
