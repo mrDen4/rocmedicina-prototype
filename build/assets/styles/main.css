@@ -778,3 +778,54 @@ ul {
         transition: .3s; }
         .vacancy .vacancy__callback .callback__form .form__btn:hover {
           background: #ff4d4d; }
+
+.news {
+  padding-top: 150px;
+  padding-bottom: 100px;
+  background: url("../images/services-bg.png") center center no-repeat;
+  background-size: cover; }
+  .news .hews__title {
+    color: #ffffff; }
+  .news .news__content {
+    display: flex;
+    justify-content: space-between; }
+  .news .news__list {
+    width: 45%;
+    flex-direction: column;
+    height: 500px;
+    overflow: auto;
+    background: #C4C4C4;
+    padding: 20px;
+    border-radius: 4px; }
+    .news .news__list .list__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: #ffffff;
+      margin-bottom: 20px;
+      height: 200px;
+      padding: 15px;
+      border-radius: 4px;
+      transition: .3s; }
+      .news .news__list .list__item:hover {
+        background: #00B6E4;
+        color: #ffffff; }
+      .news .news__list .list__item .item__title {
+        margin: 0; }
+      .news .news__list .list__item .item__link {
+        color: #FF0000;
+        text-decoration: none;
+        transition: .3s; }
+        .news .news__list .list__item .item__link:hover {
+          color: #ff4d4d; }
+  .news .news__imgs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+    height: 500px; }
+    .news .news__imgs .imgs__item {
+      width: 100%; }
+      .news .news__imgs .imgs__item .item__img {
+        width: 100%; }
