@@ -7,6 +7,12 @@
         .services__title {
             color: #ffffff;
         }
+
+        .services__menu {
+            height: 500px;
+            width: 100%;
+            overflow: scroll;
+        }
     }
 
     .services__container {

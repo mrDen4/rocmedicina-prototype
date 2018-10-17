@@ -1,4 +1,8 @@
 .contacts {
+
+    &--main {
+        padding-top: 150px; 
+    }
     
     .contacts__container {
         flex-direction: row;
