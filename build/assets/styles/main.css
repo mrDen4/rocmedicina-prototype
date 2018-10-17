@@ -691,3 +691,31 @@ ul {
     height: 500px;
     background: yellow;
     border-radius: 4px; }
+
+.documents {
+  padding-top: 150px;
+  padding-bottom: 100px;
+  background: url("../images/services-bg.png") center center no-repeat;
+  background-size: cover; }
+  .documents .documents__title {
+    color: #ffffff; }
+  .documents .documents__list {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    .documents .documents__list .list__item {
+      width: 45%;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      background: #ffffff;
+      border-radius: 4px;
+      margin-bottom: 30px;
+      transition: .3s;
+      cursor: pointer; }
+      .documents .documents__list .list__item:hover {
+        background: #00B6E4;
+        color: #ffffff; }
