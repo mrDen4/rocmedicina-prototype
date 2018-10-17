@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
-        crossorigin="anonymous">   
+        crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/styles/main.css">
 </head>
 
@@ -32,12 +32,33 @@
                 </button>
             </div>
         </header>
-        <section class="section map">
-            <div class="container map__container">
-                <h1 class="title map__title">Карта</h1>
-                <input type="text" class="map__inp" placeholder="Введите ваш адрес">
-                <div class="map__yandex">
-                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Abbfe58306d32c6eab3e2f18670cb6659e307f04b79d15425bf7ee2e8c34d9e84&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
+        <section class="section vacancy">
+            <div class="container vacancy__container">
+                <h1 class="title vacancy__title">Вакансии</h1>
+                <div class="vacancy__content">
+                    <div class="vacancy__list">
+                        <h2 class="title list__title">Вакансии</h2>
+                        <ul class="list__list">
+                            <li class="list__item">Название вакансии</li>
+                            <li class="list__item">Название вакансии</li>
+                            <li class="list__item">Название вакансии</li>
+                            <li class="list__item">Название вакансии</li>
+                            <li class="list__item">Название вакансии</li>
+                        </ul>
+                    </div>
+                    <div class="vacancy__callback">
+                        <h2 class="title callback__title">Откликнуться</h2>
+                        <form method="POST" class="callback__form">
+                            <input type="text" class="form__inp" name="name" placeholder="Введите имя">
+                            <input type="text" class="form__inp" name="phone" placeholder="Введите телефон">
+                            <input type="text" class="form__inp" name="email" placeholder="Введите E-mail">
+                            <div class="form__sub">
+                                <input type="file" class="sub__inp">
+                                <p class="sub__text">-Прикрепить резюме*</p>
+                            </div>
+                            <button class="form__btn">Отправить</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>

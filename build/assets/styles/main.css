@@ -719,3 +719,62 @@ ul {
       .documents .documents__list .list__item:hover {
         background: #00B6E4;
         color: #ffffff; }
+
+.vacancy {
+  padding-top: 150px;
+  padding-bottom: 100px;
+  background: url("../images/services-bg.png") center center no-repeat;
+  background-size: cover; }
+  .vacancy .vacancy__title {
+    color: #ffffff; }
+  .vacancy .vacancy__content {
+    display: flex;
+    justify-content: space-between; }
+  .vacancy .vacancy__list {
+    background: #C4C4C4;
+    border-radius: 4px;
+    width: 45%;
+    padding: 20px; }
+    .vacancy .vacancy__list .list__title {
+      color: #ffffff; }
+    .vacancy .vacancy__list .list__list {
+      display: flex;
+      flex-direction: column; }
+      .vacancy .vacancy__list .list__list .list__item {
+        background: #ffffff;
+        margin-bottom: 30px;
+        padding: 10px;
+        border-radius: 4px; }
+  .vacancy .vacancy__callback {
+    background: #C4C4C4;
+    border-radius: 4px;
+    width: 45%;
+    padding: 20px; }
+    .vacancy .vacancy__callback .callback__title {
+      color: #ffffff; }
+    .vacancy .vacancy__callback .callback__form {
+      display: flex;
+      flex-direction: column; }
+      .vacancy .vacancy__callback .callback__form .form__inp {
+        margin-bottom: 20px;
+        padding: 10px;
+        border: none;
+        border-radius: 4px; }
+      .vacancy .vacancy__callback .callback__form .form__sub {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px; }
+        .vacancy .vacancy__callback .callback__form .form__sub .sub__text {
+          color: red; }
+      .vacancy .vacancy__callback .callback__form .form__btn {
+        background: red;
+        border: none;
+        height: 40px;
+        border-radius: 4px;
+        color: #ffffff;
+        text-transform: uppercase;
+        font-size: 16px;
+        cursor: pointer;
+        transition: .3s; }
+        .vacancy .vacancy__callback .callback__form .form__btn:hover {
+          background: #ff4d4d; }
