@@ -1,4 +1,14 @@
 .services {
+
+    &--main {
+        background: url('../images/services-bg.png') center center no-repeat;
+        background-size: cover;
+
+        .services__title {
+            color: #ffffff;
+        }
+    }
+
     .services__container {
         padding-top: 100px;
         padding-bottom: 50px;

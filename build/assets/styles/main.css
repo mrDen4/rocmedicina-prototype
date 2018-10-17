@@ -255,6 +255,12 @@ ul {
       .callback .callback__form .form__btn:hover {
         background: #cc0000; }
 
+.services--main {
+  background: url("../images/services-bg.png") center center no-repeat;
+  background-size: cover; }
+  .services--main .services__title {
+    color: #ffffff; }
+
 .services .services__container {
   padding-top: 100px;
   padding-bottom: 50px; }
@@ -664,3 +670,24 @@ ul {
     width: 100%; }
     .reviews .slider__slide .slide__img {
       width: 100%; }
+
+.map {
+  padding-top: 150px;
+  padding-bottom: 100px;
+  background: url("../images/services-bg.png") center center no-repeat;
+  background-size: cover; }
+  .map .map__title {
+    color: #ffffff; }
+  .map .map__inp {
+    width: 100%;
+    height: 50px;
+    padding: 20px;
+    background: #ffffff;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 50px; }
+  .map .map__yandex {
+    width: 100%;
+    height: 500px;
+    background: yellow;
+    border-radius: 4px; }
