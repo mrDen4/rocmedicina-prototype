@@ -42,13 +42,27 @@
 
         .item__table {
             border: none;
+            width: 100%;
+            display: none;
+
+            &--active {
+                display: flex;
+            }
+
+            tbody {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+            }
             
             .table__row {
                 background: #ffffff;
                 border: none;
                 border-radius: 4px;
                 transition: .3s;
-                display: none;
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
 
                 &:hover {
                     background: $blue;

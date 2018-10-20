@@ -2,6 +2,13 @@
 
     &--main {
         padding-top: 150px; 
+        background: url('../images/services-bg.png') center center no-repeat;
+        background-size: cover;
+        color: #ffffff;
+
+        .content__title {
+            color: #ffffff;
+        }
     }
     
     .contacts__container {

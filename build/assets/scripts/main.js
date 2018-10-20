@@ -10,5 +10,29 @@ $(document).ready(function () {
         $('.wrapper').removeClass('wrapper--active');
         $('.wrapper__bg').removeClass('wrapper__bg--active');
     });
-});
 
+    $('.item__btn').on('click', function() {
+        if ($('.item__table').hasClass('item__table--active')) {
+          if ($(this).next('.item__table').hasClass('item__table--active')) {
+            $(this).next('.item__table').toggleClass('item__table--active');
+          } else {
+            $('.item__table').removeClass('item__table--active');
+            $(this).next('.item__table').toggleClass('item__table--active');
+          }
+        } else {
+          $(this).next('.item__table').toggleClass('item__table--active');
+        }
+      });
+
+    $('.all__list').slick({
+      autoplay: true,
+      autoplaySpeed: 2000,
+      arrows: false
+    });
+
+    $('.news__list').slick({
+      autoplay: true,
+      autoplaySpeed: 2000,
+      arrows: false
+    });
+});
