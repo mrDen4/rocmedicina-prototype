@@ -1,5 +1,5 @@
 .vacancy {
-    padding-top: 150px;
+    padding-top: 100px;
     padding-bottom: 100px;
     background: url('../images/services-bg.png') center center no-repeat;
     background-size: cover;
@@ -20,10 +20,6 @@
         width: 45%;
         padding: 20px;
 
-        .list__title {
-            color: #ffffff;
-        }
-
         .list__list {
             display: flex;
             flex-direction: column;
@@ -42,10 +38,6 @@
         border-radius: 4px;
         width: 45%;
         padding: 20px;
-
-        .callback__title {
-            color: #ffffff;
-        }
 
         .callback__form {
             display: flex;

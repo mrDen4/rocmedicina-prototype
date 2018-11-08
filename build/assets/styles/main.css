@@ -160,7 +160,7 @@ ul {
     left: 0;
     z-index: 1; }
   .hero .sale__text {
-    font-size: 56px;
+    font-size: 44px;
     z-index: 10;
     position: relative;
     margin: 0;
@@ -261,9 +261,8 @@ ul {
   .services--main .services__title {
     color: #ffffff; }
   .services--main .services__menu {
-    height: 500px;
-    width: 100%;
-    overflow: scroll; }
+    min-height: 500px;
+    width: 100%; }
 
 .services .services__container {
   padding-top: 100px;
@@ -303,58 +302,54 @@ ul {
       .services .services__menu .menu__item .item__text--red {
         color: red; }
 
-.totals .totals__container {
-  flex-direction: row;
-  flex-wrap: wrap;
-  padding-top: 50px;
-  padding-bottom: 50px; }
-
-.totals .totals__title {
-  width: 100%; }
-
-.totals .totals__done {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 50px;
-  width: 70%; }
-
-.totals .done__title, .totals .totals__conclude .conclude__title {
-  font-size: 48px;
-  color: #000000;
-  font-family: 'Roboto', Arial, Helvetica, sans-serif;
-  margin: 0;
-  margin-bottom: 50px; }
-
-.totals .done__list, .totals .totals__conclude .conclude__list {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  width: 90%; }
-  .totals .done__list .list__item, .totals .totals__conclude .conclude__list .list__item {
-    display: flex;
-    width: 48%; }
-    .totals .done__list .list__item .item__color, .totals .totals__conclude .conclude__list .list__item .item__color {
-      color: #FF0000;
-      font-size: 35px;
-      display: block;
-      margin-right: 10px;
-      font-weight: bold; }
-
-.totals .totals__conclude .conclude__list {
-  width: 100%; }
-  .totals .totals__conclude .conclude__list .list__item {
-    width: 30%; }
-
-.totals .totals__license {
-  width: 30%;
-  height: 400px;
-  background: #FF0000;
-  margin-bottom: 50px; }
-  .totals .totals__license .license__img {
+.totals {
+  background: #E5E5E5; }
+  .totals .totals__container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    padding-bottom: 50px; }
+  .totals .totals__title {
     width: 100%; }
+  .totals .totals__done {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    width: 70%; }
+  .totals .done__title, .totals .totals__conclude .conclude__title {
+    font-size: 48px;
+    color: #000000;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    margin: 0;
+    margin-bottom: 50px; }
+  .totals .done__list, .totals .totals__conclude .conclude__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 90%; }
+    .totals .done__list .list__item, .totals .totals__conclude .conclude__list .list__item {
+      display: flex;
+      width: 48%; }
+      .totals .done__list .list__item .item__color, .totals .totals__conclude .conclude__list .list__item .item__color {
+        color: #FF0000;
+        font-size: 35px;
+        display: block;
+        margin-right: 10px;
+        font-weight: bold; }
+  .totals .totals__conclude .conclude__list {
+    width: 100%; }
+    .totals .totals__conclude .conclude__list .list__item {
+      width: 30%; }
+  .totals .totals__license {
+    width: 30%;
+    height: 400px;
+    background: #FF0000;
+    margin-bottom: 50px; }
+    .totals .totals__license .license__img {
+      width: 100%; }
 
 .contacts--main {
-  padding-top: 150px;
+  padding-top: 100px;
   background: url("../images/services-bg.png") center center no-repeat;
   background-size: cover;
   color: #ffffff; }
@@ -372,6 +367,14 @@ ul {
   align-items: center;
   justify-content: center;
   width: 50%; }
+  .contacts .contacts__content--bg {
+    background: #C4C4C4; }
+    .contacts .contacts__content--bg .content__title {
+      color: #000000; }
+    .contacts .contacts__content--bg .content__text {
+      color: #000000; }
+      .contacts .contacts__content--bg .content__text .text__color {
+        color: #FF0000; }
 
 .contacts .contacts__map {
   width: 50%;
@@ -604,7 +607,7 @@ ul {
   .reviews .reviews__container {
     flex-direction: row; }
   .reviews .reviews__column {
-    width: 70%; }
+    width: 60%; }
   .reviews .column__write {
     display: flex;
     background: #E3E3E3;
@@ -671,7 +674,7 @@ ul {
       margin-bottom: 20px;
       border-radius: 4px; }
   .reviews .reviews__imgs {
-    width: 30%;
+    width: 35%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -685,7 +688,7 @@ ul {
       width: 100%; }
 
 .map {
-  padding-top: 150px;
+  padding-top: 100px;
   padding-bottom: 100px;
   background: url("../images/services-bg.png") center center no-repeat;
   background-size: cover; }
@@ -706,7 +709,7 @@ ul {
     border-radius: 4px; }
 
 .documents {
-  padding-top: 150px;
+  padding-top: 100px;
   padding-bottom: 100px;
   background: url("../images/services-bg.png") center center no-repeat;
   background-size: cover; }
@@ -734,7 +737,7 @@ ul {
         color: #ffffff; }
 
 .vacancy {
-  padding-top: 150px;
+  padding-top: 100px;
   padding-bottom: 100px;
   background: url("../images/services-bg.png") center center no-repeat;
   background-size: cover; }
@@ -748,8 +751,6 @@ ul {
     border-radius: 4px;
     width: 45%;
     padding: 20px; }
-    .vacancy .vacancy__list .list__title {
-      color: #ffffff; }
     .vacancy .vacancy__list .list__list {
       display: flex;
       flex-direction: column; }
@@ -763,8 +764,6 @@ ul {
     border-radius: 4px;
     width: 45%;
     padding: 20px; }
-    .vacancy .vacancy__callback .callback__title {
-      color: #ffffff; }
     .vacancy .vacancy__callback .callback__form {
       display: flex;
       flex-direction: column; }
@@ -793,7 +792,7 @@ ul {
           background: #ff4d4d; }
 
 .news {
-  padding-top: 150px;
+  padding-top: 100px;
   padding-bottom: 100px;
   background: url("../images/services-bg.png") center center no-repeat;
   background-size: cover; }
@@ -806,7 +805,6 @@ ul {
     width: 45%;
     flex-direction: column;
     height: 500px;
-    overflow: auto;
     background: #C4C4C4;
     padding: 20px;
     border-radius: 4px; }
