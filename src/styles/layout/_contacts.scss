@@ -82,6 +82,10 @@
         cursor: pointer;
         transition: .3s;
         text-transform: uppercase;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
         &:hover {
             background: darken($red, 10%);
