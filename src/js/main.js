@@ -24,15 +24,19 @@ $(document).ready(function () {
         }
       });
 
-    $('.all__list').slick({
-      autoplay: true,
-      autoplaySpeed: 2000,
-      arrows: false
-    });
+      $('.content__list').slick({
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+      });
 
-    $('.news__list').slick({
-      autoplay: true,
-      autoplaySpeed: 2000,
-      arrows: false
-    });
+      $('.content__slider').slick({
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      });
 });

@@ -1,0 +1,50 @@
+.breadcrumbs {
+    display: flex;
+
+    .breadcrumbs__item {
+        margin-right: 15px;
+
+        &--arrow {
+            .link__img {
+                transform: rotate(90deg);
+            }
+        }
+    }
+
+    .item__link {
+        width: 40px;
+        height: 40px;
+        background: $red;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: .3s;
+        position: relative;
+
+        .link__text {
+            opacity: 0;
+            position: absolute;
+            color: $red;
+            margin: 0;
+            font-size: 14px;  
+            width: 80px;
+            top: 0;  
+            transition: .3s;
+            text-align: center;
+        }
+
+        &:hover {
+            background: darken($color: $red, $amount: 20);
+
+            .link__text {
+                opacity: 1;
+                top: -25px;
+            }
+        }
+
+        .link__img {
+            width: 20px;
+        }
+    }
+}

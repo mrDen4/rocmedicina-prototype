@@ -8,13 +8,15 @@
     <title>Росмедицина</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/styles/main.css">
 </head>
 
 <body>
     <div class="wrapper">
         <header class="header">
-            <div class="header__bg"></div>
+            <div class="header__bg header__bg--dark"></div>
             <div class="container header__container">
                 <a href="./index.html" class="header__logo">
                     <img src="./assets/images/logo.png" alt="logo" class="logo__img">
@@ -26,12 +28,67 @@
                 <button class="header__menu">
                     <p class="menu__text">Меню</p>
                     <div class="menu__icon"></div>
-                    <!-- <img src="./assets/images/menu.png" alt="icon" class="menu__icon"> -->
                 </button>
             </div>
         </header>
+        <section class="section service">
+            <div class="container service__container">
+                <h1 class="title service__title">Дежурство скорой помощи</h1>
+                <div class="service__content">
+                    <ul class="content__slider">
+                        <li class="slider__slide">
+                            <h3 class="slide__title">Дежурство скорой помощи</h3>
+                            <p class="slide__old-price">1600 руб</p>
+                            <p class="slide__new-price">1000 руб</p>
+                            <p class="slide__date">Скидка действует до 01.11.2018 г.</p>
+                            <button class="slide__btn">ЗАКАЗАТЬ</button>
+                        </li>
+                        <li class="slider__slide">
+                            <h3 class="slide__title">Дежурство скорой помощи</h3>
+                            <p class="slide__old-price">1600 руб</p>
+                            <p class="slide__new-price">1000 руб</p>
+                            <p class="slide__date">Скидка действует до 01.11.2018 г.</p>
+                            <button class="slide__btn">ЗАКАЗАТЬ</button>
+                        </li>
+                    </ul>
+                    <div class="content__about">
+                        <h2 class="about__title">Дежурство бригады на мероприятиях</h2>
+                        <table class="about__price">
+                            <tr class="price__row">
+                                <th class="row__title row__col-name">Название услуги</th>
+                                <th class="row__title row__col-price">Цена</th>
+                            </tr>
+                            <tr class="price__row">
+                                <td class="row__col row__col-name">Выезд бригады скорой помощи в пределах МКАД</th>
+                                <td class="row__col row__col-price">1500 руб</th>
+                            </tr>
+                            <tr class="price__row">
+                                <td class="row__col row__col-name">Выезд бригады скорой помощи в пределах МКАД</th>
+                                <td class="row__col row__col-price">1500 руб</th>
+                            </tr>
+                            <tr class="price__row">
+                                <td class="row__col row__col-name">Выезд бригады скорой помощи в пределах МКАД</th>
+                                <td class="row__col row__col-price">15000 руб</th>
+                            </tr>
+                            <tr class="price__row">
+                                <td class="row__col row__col-name">Выезд бригады скорой помощи в пределах МКАД</th>
+                                <td class="row__col row__col-price">1500 руб</th>
+                            </tr>
+                            <tr class="price__row">
+                                <td class="row__col row__col-name">Выезд бригады скорой помощи в пределах МКАД</th>
+                                <td class="row__col row__col-price">1500 руб</th>
+                            </tr>
+                        </table>
+                        <div class="about__callback">
+                            <a href="#" class="btn callback__btn">Посмотреть весь прайс-лист</a>
+                            <button class="btn callback__btn">Уточнить цены по телефону</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="section about">
-            <div class="container about__container">
+            <div class="container about__container about__container--ptn">
                 <div class="about__top">
                     <ul class="breadcrumbs">
                         <li class="breadcrumbs__item">
@@ -53,6 +110,7 @@
                         </li>
                     </ul>
                     <h1 class="title about__title">О компании</h1>
+                    <button class="btn about__btn">Заказать звонок</button>
                 </div>
                 <div class="about__content">
                     <p class="text__text">
