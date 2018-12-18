@@ -252,6 +252,53 @@ ul {
       .callback .callback__form .form__btn:hover {
         background: #cc0000; }
 
+.services-index--main {
+  background: url("../images/services-bg.png") center center no-repeat;
+  background-size: cover; }
+  .services-index--main .services__title {
+    color: #ffffff; }
+  .services-index--main .services__menu {
+    min-height: 500px;
+    width: 100%; }
+
+.services-index .services__container {
+  padding-top: 100px;
+  padding-bottom: 50px; }
+
+.services-index .services__menu {
+  display: flex;
+  flex-wrap: wrap; }
+  .services-index .services__menu .menu__item {
+    width: 25%;
+    height: 220px;
+    border: 1px solid #ffffff;
+    background: #E5E5E5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+    cursor: pointer; }
+    .services-index .services__menu .menu__item:hover .item__title {
+      transform: translateY(0px); }
+    .services-index .services__menu .menu__item:hover .item__text {
+      opacity: 1; }
+    .services-index .services__menu .menu__item .item__link {
+      text-decoration: none;
+      color: #000000; }
+    .services-index .services__menu .menu__item .item__title {
+      transform: translateY(50px);
+      transition: .3s;
+      text-align: center; }
+      .services-index .services__menu .menu__item .item__title--red {
+        color: red; }
+    .services-index .services__menu .menu__item .item__text {
+      opacity: 0;
+      transition: .3s;
+      text-align: center; }
+      .services-index .services__menu .menu__item .item__text--red {
+        color: red; }
+
 .totals {
   background: #E5E5E5; }
   .totals .totals__container {
