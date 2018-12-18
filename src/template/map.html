@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
-        crossorigin="anonymous">   
+        crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/styles/main.css">
 </head>
 
@@ -34,9 +34,31 @@
         </header>
         <section class="section map">
             <div class="container map__container">
-                <h1 class="title map__title">Карта</h1>
+                <div class="top">
+                    <ul class="breadcrumbs">
+                        <li class="breadcrumbs__item">
+                            <a href="#" class="item__link">
+                                <img src="./assets/images/breadcrumb.png" alt="" class="link__img">
+                                <p class="link__text">Главная</p>
+                            </a>
+                        </li>
+                        <li class="breadcrumbs__item breadcrumbs__item--arrow">
+                            <a href="#" class="item__link">
+                                <img src="./assets/images/breadcrumb.png" alt="" class="link__img">
+                            </a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a href="#" class="item__link">
+                                <img src="./assets/images/breadcrumb.png" alt="" class="link__img">
+                                <p class="link__text">Карта</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <h1 class="title map__title">Карта</h1>
+                    <button class="btn map__btn">Заказать звонок</button>
+                </div>
                 <div class="map__yandex">
-                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Abbfe58306d32c6eab3e2f18670cb6659e307f04b79d15425bf7ee2e8c34d9e84&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
+                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Abbfe58306d32c6eab3e2f18670cb6659e307f04b79d15425bf7ee2e8c34d9e84&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
                 </div>
             </div>
         </section>

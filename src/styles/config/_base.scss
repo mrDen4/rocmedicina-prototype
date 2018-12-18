@@ -64,3 +64,33 @@ list-style: none;
     display: initial;
   }
 }
+
+.top {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+
+  h1 {
+    margin: 0;
+  }
+}
+
+.btn {
+  border: none;
+  border-radius: 4px;
+  background: $red;
+  color: #ffffff;
+  transition: .3s;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  padding: 0 20px;
+
+  &:hover {
+      background: darken($color: $red, $amount: 20);
+  }
+}
