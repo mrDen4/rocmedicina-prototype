@@ -39,4 +39,13 @@ $(document).ready(function () {
         slidesToShow: 1,
         slidesToScroll: 1
       });
+
+      $('.reviews__list').slick({
+        autoplay: true,
+        autoplaySpeed: 2000,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        prevArrow: $('.arrows__arrow--left'),
+        nextArrow: $('.arrows__arrow--right')
+      });
 });

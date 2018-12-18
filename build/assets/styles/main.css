@@ -685,92 +685,59 @@ ul {
     background: #990000; }
 
 .reviews {
-  padding-top: 150px;
+  padding-top: 100px;
   padding-bottom: 100px;
   background: url("../images/services-bg.png") center center no-repeat;
   background-size: cover; }
-  .reviews .reviews__container {
-    flex-direction: row; }
-  .reviews .reviews__column {
-    width: 60%; }
-  .reviews .column__write {
+  .reviews .reviews__title {
+    color: #ffffff; }
+  .reviews .reviews__list {
     display: flex;
-    background: #E3E3E3;
-    flex-direction: column;
-    padding: 10px;
-    border-radius: 4px; }
-  .reviews .write__tile {
-    margin-bottom: 10px; }
-  .reviews .write__form {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 150px; }
-    .reviews .write__form .form__left {
-      width: 30%;
-      height: 100%;
+    justify-content: space-between; }
+    .reviews .reviews__list .list__item {
       display: flex;
       flex-direction: column;
-      justify-content: space-between; }
-      .reviews .write__form .form__left .left__inp {
-        width: 100%;
-        padding: 10px;
-        border: none;
-        border-radius: 4px; }
-    .reviews .write__form .form__right {
-      width: 65%;
-      height: 100%;
+      justify-content: space-between;
+      align-items: center;
+      width: 45%;
+      margin-right: 25px;
+      margin-left: 25px; }
+    .reviews .reviews__list .item__block {
       display: flex;
       flex-direction: column;
-      justify-content: space-between; }
-      .reviews .write__form .form__right .right__text {
-        height: 100px;
-        border: none;
-        border-radius: 4px;
-        padding: 10px; }
-      .reviews .write__form .form__right .right__btn {
-        width: 200px;
-        background: red;
-        text-transform: uppercase;
-        color: #ffffff;
-        padding: 10px;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-        transition: .3s; }
-        .reviews .write__form .form__right .right__btn:hover {
-          background: #ff6666; }
-  .reviews .column__all {
-    background: #E3E3E3;
-    margin-top: 20px;
-    border-radius: 4px; }
-  .reviews .all__title {
-    margin-bottom: 10px; }
-  .reviews .all__list {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    width: 100%; }
-    .reviews .all__list .list__item {
+      background: #E3E3E3;
+      border-radius: 4px;
+      margin-bottom: 50px;
+      padding: 10px 20px; }
+    .reviews .reviews__list .item__name {
+      margin: 0; }
+    .reviews .reviews__list .item__text {
       background: #ffffff;
-      display: flex;
-      flex-direction: column;
-      padding: 10px;
-      margin-bottom: 20px;
-      border-radius: 4px; }
-  .reviews .reviews__imgs {
-    width: 35%;
+      border-radius: 4px;
+      padding: 10px; }
+  .reviews .reviews__arrows {
     display: flex;
+    width: 100%;
     align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    padding: 15px; }
-  .reviews .imgs__slider {
-    width: 100%; }
-  .reviews .slider__slide {
-    width: 100%; }
-    .reviews .slider__slide .slide__img {
-      width: 100%; }
+    justify-content: center; }
+    .reviews .reviews__arrows .arrows__arrow {
+      background: #FF0000;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: .3s; }
+      .reviews .reviews__arrows .arrows__arrow:hover {
+        background: #990000; }
+    .reviews .reviews__arrows .arrows__arrow--left {
+      margin-right: 15px; }
+    .reviews .reviews__arrows .arrows__arrow--right {
+      margin-left: 15px; }
 
 .map {
   padding-top: 100px;
@@ -1009,7 +976,9 @@ ul {
     align-items: center;
     justify-content: center;
     transition: .3s;
-    position: relative; }
+    position: relative;
+    color: #ffff;
+    text-decoration: none; }
     .breadcrumbs .item__link .link__text {
       opacity: 0;
       position: absolute;

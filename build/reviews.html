@@ -38,60 +38,94 @@
         </header>
         <section class="section reviews">
             <div class="container reviews__container">
-                <div class="reviews__column">
-                    <div class="column__write">
-                        <h1 class="title write__tile">Написать отзыв</h1>
-                        <form method="POST" class="write__form">
-                            <div class="form__left">
-                                <input type="text" class="left__inp" name="name" placeholder="Введите имя">
-                                <input type="text" class="left__inp" name="email" placeholder="Введите E-mail">
-                                <input type="text" class="left__inp" name="phone" placeholder="Введите телефон">
-                            </div>
-                            <div class="form__right">
-                                <textarea class="right__text" name="text" cols="30" rows="10" placeholder="Напишите ваш отзыв"></textarea>
-                                <button class="right__btn">Отправить отзыв</button>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="column__all">
-                        <h1 class="title all__title">Отзывы</h1>
-                        <ul class="all__list">
-                            <li class="list__item">
-                                <h3 class="item__name">Василий Д.А. 21.08.2018</h3>
-                                <p class="item__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
-                                    quos? Cum iure, voluptatibus totam magnam doloremque nihil eaque aspernatur dolor
-                                    animi ipsum quaerat consequuntur autem quae? Mollitia, doloribus. Dicta,
-                                    tempora.Rem ducimus impedit commodi sint accusantium accusamus sunt deleniti
-                                    consectetur omnis numquam aperiam saepe, tempora blanditiis laboriosam facere aut?
-                                    Error, pariatur ratione natus quasi neque temporibus non deleniti corporis aut.</p>
-                            </li>
-                            <li class="list__item">
-                                <h3 class="item__name">Василий Д.А. 21.08.2018</h3>
-                                <p class="item__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
-                                    quos? Cum iure, voluptatibus totam magnam doloremque nihil eaque aspernatur dolor
-                                    animi ipsum quaerat consequuntur autem quae? Mollitia, doloribus. Dicta,
-                                    tempora.Rem ducimus impedit commodi sint accusantium accusamus sunt deleniti
-                                    consectetur omnis numquam aperiam saepe, tempora blanditiis laboriosam facere aut?
-                                    Error, pariatur ratione natus quasi neque temporibus non deleniti corporis aut.</p>
-                            </li>
-                            <li class="list__item">
-                                <h3 class="item__name">Василий Д.А. 21.08.2018</h3>
-                                <p class="item__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
-                                    quos? Cum iure, voluptatibus totam magnam doloremque nihil eaque aspernatur dolor
-                                    animi ipsum quaerat consequuntur autem quae? Mollitia, doloribus. Dicta,
-                                    tempora.Rem ducimus impedit commodi sint accusantium accusamus sunt deleniti
-                                    consectetur omnis numquam aperiam saepe, tempora blanditiis laboriosam facere aut?
-                                    Error, pariatur ratione natus quasi neque temporibus non deleniti corporis aut.</p>
-                            </li>
-                        </ul>
-                    </div>
+                <div class="top">
+                    <ul class="breadcrumbs">
+                        <li class="breadcrumbs__item">
+                            <a href="#" class="item__link">
+                                <i class="fas fa-home"></i>
+                                <p class="link__text">Главная</p>
+                            </a>
+                        </li>
+                        <li class="breadcrumbs__item breadcrumbs__item--arrow">
+                            <a href="#" class="item__link">
+                                <i class="fas fa-angle-right"></i>
+                            </a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a href="#" class="item__link">
+                                <i class="fas fa-ambulance"></i>
+                                <p class="link__text">Услуги</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <h1 class="title reviews__title">Отзывы</h1>
+                    <button class="btn">Заказать звонок</button>
                 </div>
-                <div class="reviews__imgs">
-                    <div class="imgs__slider">
-                        <div class="slider__slide">
-                            <img src="./assets/images/review.png" alt="" class="slide__img">
+                <ul class="reviews__list">
+                    <li class="list__item">
+                        <div class="item__block">
+                            <h3 class="item__name">Василий Д.А. 21.08.2018</h3>
+                            <p class="item__text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae maxime culpa, porro
+                                nostrum
+                                officia quia dolorum obcaecati eveniet modi aspernatur corrupti perspiciatis ut atque
+                                aperiam necessitatibus dignissimos, ratione dicta! Distinctio!
+                            </p>
                         </div>
-                    </div>
+                        <div class="item__block">
+                            <h3 class="item__name">Василий Д.А. 21.08.2018</h3>
+                            <p class="item__text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae maxime culpa, porro
+                                nostrum
+                                officia quia dolorum obcaecati eveniet modi aspernatur corrupti perspiciatis ut atque
+                                aperiam necessitatibus dignissimos, ratione dicta! Distinctio!
+                            </p>
+                        </div>
+                    </li>
+                    <li class="list__item">
+                        <div class="item__block">
+                            <h3 class="item__name">Василий Д.А. 21.08.2018</h3>
+                            <p class="item__text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae maxime culpa, porro
+                                nostrum
+                                officia quia dolorum obcaecati eveniet modi aspernatur corrupti perspiciatis ut atque
+                                aperiam necessitatibus dignissimos, ratione dicta! Distinctio!
+                            </p>
+                        </div>
+                        <div class="item__block">
+                            <h3 class="item__name">Василий Д.А. 21.08.2018</h3>
+                            <p class="item__text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae maxime culpa, porro
+                                nostrum
+                                officia quia dolorum obcaecati eveniet modi aspernatur corrupti perspiciatis ut atque
+                                aperiam necessitatibus dignissimos, ratione dicta! Distinctio!
+                            </p>
+                        </div>
+                    </li>
+                    <li class="list__item">
+                        <div class="item__block">
+                            <h3 class="item__name">Василий Д.А. 21.08.2018</h3>
+                            <p class="item__text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae maxime culpa, porro
+                                nostrum
+                                officia quia dolorum obcaecati eveniet modi aspernatur corrupti perspiciatis ut atque
+                                aperiam necessitatibus dignissimos, ratione dicta! Distinctio!
+                            </p>
+                        </div>
+                        <div class="item__block">
+                            <h3 class="item__name">Василий Д.А. 21.08.2018</h3>
+                            <p class="item__text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae maxime culpa, porro
+                                nostrum
+                                officia quia dolorum obcaecati eveniet modi aspernatur corrupti perspiciatis ut atque
+                                aperiam necessitatibus dignissimos, ratione dicta! Distinctio!
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="reviews__arrows">
+                    <button class="arrows__arrow arrows__arrow--left"><i class="fas fa-arrow-left"></i></button>
+                    <button class="arrows__arrow arrows__arrow--right"><i class="fas fa-arrow-right"></i></button>
                 </div>
             </div>
         </section>
