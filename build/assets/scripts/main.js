@@ -40,6 +40,14 @@ $(document).ready(function () {
         slidesToScroll: 1
       });
 
+      $('.totals__license').slick({
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      });
+
       $('.reviews__list').slick({
         autoplay: true,
         autoplaySpeed: 2000,

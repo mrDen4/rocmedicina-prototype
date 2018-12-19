@@ -10,6 +10,29 @@
         height: 100%;
     }
 
+    .hero__partners {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 50px;
+
+        .partners__slide {
+            height: 100px;
+            width: 200px;
+            background: $red;
+            border-radius: 4px;
+            opacity: .5;
+            transition: .3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+
     .hero__sale {
         display: flex;
         flex-direction: column;

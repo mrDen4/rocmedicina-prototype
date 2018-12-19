@@ -47,10 +47,19 @@
         height: 50%;
         margin-bottom: 20px;
 
+        .list__item {
+            width: 110px;
+        }
+
         .item__link {
             color: #000000;
             text-decoration: none;
             transition: .3s;
+
+            &--active {
+                color: $red;
+                text-decoration: underline;
+            }
 
             &:hover {
                 color: $red;
