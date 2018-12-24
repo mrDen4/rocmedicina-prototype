@@ -7,10 +7,18 @@
         align-items: center;
         padding-top: 20px;
         padding-bottom: 20px;
+
+        @include phones() {
+            flex-direction: column;
+        }
     }
 
     .footer__left {
         width: 60%;
+
+        @include phones() {
+            width: 100%;
+        }
     }
 
     .left__text {
@@ -19,6 +27,10 @@
 
     .left__list {
         display: flex;
+
+        @include phones() {
+            flex-direction: column;
+        }
 
         .item__link {
             color: #000000;

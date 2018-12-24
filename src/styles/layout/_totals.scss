@@ -6,6 +6,10 @@
         flex-wrap: wrap;
         padding-top: 50px;
         padding-bottom: 50px;
+
+        @include phones() {
+            flex-direction: column;
+        }
     }
 
     .totals__title {
@@ -17,6 +21,10 @@
         flex-direction: column;
         margin-bottom: 50px;
         width: 70%;
+
+        @include phones() {
+            width: 100%;
+        }
     }
 
     .done__title {
@@ -33,9 +41,19 @@
         flex-wrap: wrap;
         width: 90%;
 
+        @include phones() {
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+
         .list__item {
             display: flex;
             width: 48%;
+
+            @include phones() {
+                width: 100%;
+            }
 
             .item__color {
                 color: $red;
@@ -59,6 +77,10 @@
 
             .list__item {
                 width: 30%;
+
+                @include phones() {
+                    width: 100%;
+                }
             }
         }
     }
@@ -68,6 +90,10 @@
         height: 400px;
         background: $red;
         margin-bottom: 50px;
+
+        @include phones() {
+            width: 100%;
+        }
 
         .license__img {
             width: 100%;

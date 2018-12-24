@@ -15,6 +15,10 @@
         flex-direction: row;
         padding-top: 50px;
         padding-bottom: 50px;
+
+        @include phones() {
+            flex-direction: column;
+        }
     }
 
     .contacts__content {
@@ -24,6 +28,10 @@
         justify-content: center;
         width: 50%;
         border-radius: 4px;
+
+        @include phones() {
+            width: 100%;
+        }
 
         &--bg {
             background: #C4C4C4;
@@ -47,6 +55,10 @@
         height: 500px;
         border-radius: 4px;
         overflow: hidden;
+
+        @include phones() {
+            width: 100%;
+        }
     }
 
     .content__link {

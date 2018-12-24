@@ -9,6 +9,11 @@
     transition: .3s;
     transform: translateX(100%);
 
+    @include phones() {
+        transform: translateX(150%);   
+        width: 100%;     
+    }
+
     &--active {
         transform: translateX(0%);
     }

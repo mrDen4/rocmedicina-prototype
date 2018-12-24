@@ -4,6 +4,11 @@
     height: 100vh;
     width: 100%;
 
+    @include phones() {
+        padding-top: 300px;
+        height: inherit;
+    }
+
     .hero__container {
         align-items: center;
         justify-content: center;
@@ -45,6 +50,10 @@
         padding: 20px;
         position: relative;
         z-index: 10;
+
+        @include phones() {
+            width: 100%;
+        }
     }
 
     .content__bg {

@@ -35,6 +35,10 @@
            transition: .3s;	
            cursor: pointer;	
 
+           @include phones() {
+               width: 50%;
+           }
+
             &:hover {	
 
                 .item__title {	
