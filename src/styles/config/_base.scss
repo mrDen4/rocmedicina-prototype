@@ -76,8 +76,18 @@ list-style: none;
   margin-bottom: 50px;
   margin-top: 50px;
 
+  @include phones() {
+    flex-direction: column;
+    justify-content: center;
+  }
+
   h1 {
     margin: 0;
+
+    @include phones() {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
   }
 }
 

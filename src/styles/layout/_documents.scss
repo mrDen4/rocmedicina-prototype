@@ -4,8 +4,17 @@
     background: url('../images/services-bg.png') center center no-repeat;
     background-size: cover;
 
+    @include phones() {
+        padding-top: 150px;
+    }
+
     .documents__title {
         color: #ffffff;
+
+        @include phones() {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
     }
 
     .documents__list {
@@ -26,6 +35,10 @@
             margin-bottom: 30px;
             transition: .3s;
             cursor: pointer;
+
+            @include phones() {
+                width: 100%;
+            }
 
             &:hover {
                 background: #00B6E4;

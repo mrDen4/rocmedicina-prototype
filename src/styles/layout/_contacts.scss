@@ -6,8 +6,18 @@
         background-size: cover;
         color: #ffffff;
 
+        @include phones() {
+            padding-top: 150px;
+        }
+
         .content__title {
             color: #ffffff;
+        }
+
+        .contacts__content  {
+            @include phones() {
+                padding: 10px;
+            }
         }
     }
     
@@ -31,6 +41,7 @@
 
         @include phones() {
             width: 100%;
+            margin-bottom: 30px;
         }
 
         &--bg {

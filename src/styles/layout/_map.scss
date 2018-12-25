@@ -4,9 +4,18 @@
     background: url('../images/services-bg.png') center center no-repeat;
     background-size: cover;
 
+    @include phones() { 
+        padding-top: 150px;
+    }
+
     .map__title {
         color: #ffffff;
         margin: 0;
+
+        @include phones() {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
     }
 
     .map__yandex {
